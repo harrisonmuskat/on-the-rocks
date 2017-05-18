@@ -37,7 +37,7 @@ class App extends Component {
         <div className="top-bar-right">
           <ul className="menu">
             <li><input type="search" placeholder="Search" /></li>
-            <Button handleClick={this.handleButtonClick}/>
+            <li><Button handleClick={this.handleButtonClick}/></li>
           </ul>
         </div>
       </div>
