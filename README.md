@@ -5,3 +5,5 @@
 # README
 
 On the Rocks, a cocktail app, coming soon.
+
+Find cocktails based on your bar ingredients.
