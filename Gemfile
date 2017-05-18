@@ -9,6 +9,10 @@ gem 'jquery-rails'
 gem 'foundation-rails'
 gem 'devise'
 
+group :test do
+  gem 'coveralls', require: false
+end
+
 group :development do
   gem 'listen', '~> 3.0.5'
   gem 'spring'
@@ -18,11 +22,14 @@ end
 group :development, :test do
   gem 'capybara'
   gem 'factory_girl_rails'
-  gem 'launchy', require: false
+  gem 'launchy'
   gem 'pry-rails'
-  gem 'rspec-rails', '~> 3.5'
-  gem 'shoulda-matchers'
+  gem 'rspec-rails'
+  gem 'shoulda-matchers', git: 'https://github.com/thoughtbot/shoulda-matchers.git', branch: 'rails-5'
   gem 'valid_attribute'
+  gem 'dotenv-rails'
+  gem 'database_cleaner'
+  gem 'faker'
 end
 
 group :production do
