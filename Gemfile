@@ -9,6 +9,10 @@ gem 'jquery-rails'
 gem 'foundation-rails'
 gem 'devise'
 
+group :test do
+  gem 'coveralls', require: false
+end
+
 group :development do
   gem 'listen', '~> 3.0.5'
   gem 'spring'
@@ -23,6 +27,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.5'
   gem 'shoulda-matchers'
   gem 'valid_attribute'
+  gem 'dotenv-rails'
 end
 
 group :production do

@@ -1,24 +1,7 @@
+![Build Status](https://codeship.com/projects/6a9346d0-1e0b-0135-9eae-1a0edcac32c4/status?branch=master)
+![Code Climate](https://codeclimate.com/github/harrisonmuskat/on-the-rocks.png)
+![Coverage Status](https://coveralls.io/repos/harrisonmuskat/on-the-rocks/badge.png)
+
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+On the Rocks, a cocktail app, coming soon.
