@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "On the Rocks" %></title>
 
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
@@ -12,9 +12,21 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <ul class="menu">
+          <li class="menu-text">On the Rocks</li>
+        </ul>
+      </div>
+      <div class="top-bar-right">
+        <ul class="menu">
+          <li><input type="search" placeholder="Search" /></li>
+          <li> <%= link_to "Sign In", new_user_registration_path, class:"button" %> </li>
+        </ul>
+      </div>
+    </div>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
-
+    <%= yield %>
   </body>
 </html>
